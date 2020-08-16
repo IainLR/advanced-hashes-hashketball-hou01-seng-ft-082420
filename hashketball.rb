@@ -130,10 +130,10 @@ end
 
 # Write code here
 
-def player_helper
-  game_hash[:home][:players].push(game_hash[:away][:players])
+#def player_helper
+  #game_hash[:home][:players].merge(game_hash[:away][:players])
   
-end 
+#end 
 #binding.pry
 
 

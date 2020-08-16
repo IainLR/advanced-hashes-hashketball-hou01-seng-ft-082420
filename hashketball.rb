@@ -147,13 +147,12 @@ def get_team_helper(team)
 end 
 
 def num_points_scored(player_name)
-  #game_hash.values.each do |team_name|
-    #team_name[:players].each do |name|
-    #  return name[:points] if name.has_value?(player_name)
+  game_hash.values.each do |team_name|
+    team_name[:players].each do |name|
+    return name[:points] if name.has_value?(player_name)
       #binding.pry
-   # end 
-  #end 
-  player_helper[player_name.to_i][:points]
+   end 
+  end 
 end
 
 def shoe_size(player_name)
